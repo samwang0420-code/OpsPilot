@@ -1,0 +1,43 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;700&display=swap');
+
+@theme {
+  --font-headline: "Manrope", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-label: "Space Grotesk", ui-monospace, SFMono-Regular, monospace;
+
+  --color-primary: #001F3F;
+  --color-primary-dim: #00152b;
+  --color-secondary: #546168;
+  --color-background: #fcf9f8;
+  --color-surface: #fcf9f8;
+  --color-surface-dim: #dbdad9;
+  --color-surface-bright: #fcf9f8;
+  --color-surface-container: #f0eded;
+  --color-surface-container-low: #f6f3f2;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-high: #eae8e7;
+  --color-surface-container-highest: #e4e2e2;
+  --color-on-surface: #323232;
+  --color-on-surface-variant: #5f5f5f;
+  --color-outline-variant: #b3b2b1;
+  --color-secondary-container: #d7e4ec;
+  --color-on-secondary-container: #47545a;
+  --color-inverse-surface: #0e0e0e;
+
+  --radius-lg: 0.25rem;
+  --radius-xl: 0.5rem;
+  --radius-full: 9999px;
+}
+
+@layer base {
+  body {
+    @apply bg-surface text-on-surface font-body antialiased;
+  }
+}
+
+.technical-grid {
+  background-image: radial-gradient(circle, #b3b2b1 1px, transparent 1px);
+  background-size: 40px 40px;
+  opacity: 0.1;
+}
